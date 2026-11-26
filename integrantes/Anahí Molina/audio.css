@@ -1,0 +1,101 @@
+
+/* ESPACIO MUSICAL */
+
+.seccion-audio {
+    background: linear-gradient(
+        135deg,
+        #dce8ed,
+        #c3d8e4,
+        #e9e2dc
+    );
+
+    padding: 55px 7%;
+    text-align: center;
+}
+
+.audio-contenido {
+    max-width: 650px;
+    margin: auto;
+    background-color: #fffaf6;
+    padding: 35px;
+    border-radius: 28px;
+    box-shadow: 0 8px 25px rgba(75, 110, 140, 0.15);
+    position: relative;
+}
+
+.seccion-audio h2 {
+    color: #7899b3;
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+
+.seccion-audio p {
+    color: #a5a09a;
+    margin-bottom: 20px;
+}
+
+.reproductor {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: #e6edf0;
+    padding: 18px;
+    border-radius: 20px;
+    text-align: left;
+}
+
+.portada-audio {
+    width: 125px;
+    height: 125px;
+    object-fit: cover;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(70, 100, 130, 0.15);
+}
+
+.datos-audio {
+    flex: 1;
+    min-width: 0;
+}
+
+.datos-audio h3 {
+    color: #63849e;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.datos-audio p {
+    color: #9b9a98;
+    margin-bottom: 15px;
+}
+
+.datos-audio audio {
+    width: 100%;
+    height: 40px;
+}
+
+.decoracion-audio {
+    display: block;
+    color: #a5bccc;
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+/* AUDIO EN CELULARES */
+
+@media (max-width: 500px) {
+
+    .audio-contenido {
+        padding: 20px;
+    }
+
+    .reproductor {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .portada-audio {
+        width: 150px;
+        height: 150px;
+    }
+
+}

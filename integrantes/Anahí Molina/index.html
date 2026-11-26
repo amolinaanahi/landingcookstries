@@ -1,0 +1,359 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Anahí Molina | Portafolio Creativo</title>
+
+    <!-- CSS GENERAL -->
+    <link rel="stylesheet" href="creative.css">
+
+    <!-- CSS EXCLUSIVO DEL AUDIO -->
+    <link rel="stylesheet" href="audio.css">
+</head>
+
+<body>
+
+    <!-- NAVEGACIÓN -->
+    <nav class="navegacion">
+
+        <a href="#inicio" class="logo"> PORTAFOLIO PERSONAL </a>
+
+        <div class="menu">
+            <a href="#inicio">Inicio</a>
+            <a href="#sobre-mi">Sobre mí</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#musica">Música</a>
+        </div>
+
+    </nav>
+
+
+    <!-- BIENVENIDA -->
+    <header class="hero" id="inicio">
+
+        <div class="hero-texto">
+
+            <span class="estrellita">✧ ✦ ✧</span>
+
+            <h1>Hola, soy Anahí </h1>
+
+            <p>
+                Diseñadora multimedia especializada en diseño gráfico y edición de video.
+            </p>
+
+
+            <a href="#sobre-mi" class="boton">
+                Conoce más ✧
+            </a>
+
+        </div>
+
+        <div class="hero-imagen">
+            <img src="Imagenes/Ani H.jpeg"
+                 alt="Imagen decorativa de mi portafolio">
+        </div>
+
+    </header>
+
+
+    <!-- SOBRE MÍ -->
+    <section class="sobre-mi" id="sobre-mi">
+
+        <h2>Sobre mí </h2>
+
+        <p>
+            Soy Anahí, una persona creativa que disfruta
+            experimentar con colores, formas, imágenes
+            y diferentes maneras de comunicar ideas.
+
+            Me encanta transformar la imaginación
+            en proyectos visuales y tangibles.
+        </p>
+
+    </section>
+
+
+   
+<!-- PROYECTOS -->
+<main id="proyectos">
+
+    <section class="trabajos">
+
+        <div class="titulo-seccion">
+            <h2>✦ Mis trabajos ✦</h2>
+            <p>Explora mis áreas de interés y proyectos creativos.</p>
+        </div>
+
+        <div class="tarjetas">
+
+            <!-- FOTOGRAFÍA -->
+            <a href="./fotografia.html" class="tarjeta">
+
+                <img src="Imagenes/Fotografía.jpg"
+                     alt="Proyecto de fotografía">
+
+                <h3>📷 Fotografía</h3>
+
+                <p>Capturo pequeños momentos ♡</p>
+
+            </a>
+
+
+            <!-- DISEÑO -->
+            <a href="./diseno.html" class="tarjeta2">
+
+                <img src="Imagenes/Diseño.jpeg"
+                     alt="Proyecto de diseño">
+
+                <h3>🎨 Diseño</h3>
+
+                <p>Creo ideas en forma visual ♡</p>
+
+            </a>
+
+
+            <!-- ANIMACIÓN -->
+            <a href="./animacion.html" class="tarjeta">
+
+                <video autoplay muted loop playsinline>
+                    <source src="Video/AnuncioExamen.mp4"
+                            type="video/mp4">
+                </video>
+
+                <h3>🎬 Animación</h3>
+
+                <p>Doy vida a mis ideas ♡</p>
+
+            </a>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<!-- SECCIÓN MULTIMEDIA -->
+
+<section class="seccion-audio" id="musica">
+
+    <h2>Recursos audiovisuales</h2>
+    <p>Cómo dibujar comida en Adobe Illustrator</p>
+
+    <div class="contenedor-multimedia">
+
+        <!-- VIDEO A LA IZQUIERDA -->
+
+        <div class="video-contenedor">
+
+        <video class="video-personalizado" controls>
+        <source src="Video/How to Draw Food in Adobe Illustrator.mp4" type="video/mp4">
+        </video>
+
+        <p></p>
+
+        </div>
+
+        <!-- AUDIO A LA DERECHA -->
+
+        <div class="audio-contenido">
+
+            <h3>Espacio musical</h3>
+
+            <div class="reproductor">
+
+                <img
+                    src="Video/Osito.gif"
+                    alt="Portada musical"
+                    class="portada-audio">
+
+                <div class="datos-audio">
+
+                    <h4>Ring Pop</h4>
+
+                    <p>Melanie Martinez</p>
+
+                    <audio controls>
+
+                        <source src="audio/RingPop.mp3" type="audio/mpeg">
+
+                        Tu navegador no puede reproducir este audio.
+
+                    </audio>
+
+                </div>
+
+            </div>
+
+            <span class="decoracion-audio">✧ ♡ ✧</span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+</script>
+ <header class="cabecera">
+
+        <h1>MI ESTUDIO GENERATIVO</h1>
+
+        <p>Diseño + código + experimentación</p>
+
+    </header>
+
+    <main>
+
+        <section class="estudio">
+
+            <div class="panel">
+
+                <h2>Mi composición</h2>
+
+                <canvas
+                    id="miCanvas"
+                    width="600"
+                    height="600">
+
+                    Tu navegador no soporta Canvas.
+
+                </canvas>
+
+                <p class="ayuda">
+                    Presiona "Guardar imagen PNG" para guardar tu composición.
+                </p>
+
+            </div>
+
+            <div class="herramientas">
+
+                <h2>Panel creativo</h2>
+
+                <p>
+                    Personaliza los colores y genera
+                    nuevas composiciones.
+                </p>
+
+                <h3>Paletas de color</h3>
+
+                <button id="neon" type="button">
+                    Azul
+                </button>
+
+                <button id="atardecer" type="button">
+                    Rosado
+                </button>
+
+                <button id="oceano" type="button">
+                    Grises
+                </button>
+
+                <h3>Acciones</h3>
+
+                <button
+                    id="generar"
+                    class="principal"
+                    type="button">
+
+                    Generar nueva composición
+
+                </button>
+
+                <button
+                    id="guardar"
+                    class="secundario"
+                    type="button">
+
+                    Guardar imagen PNG
+
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="conejo.js"></script>
+     <footer>
+
+        <p>
+            ✦ 
+        </p>
+
+    </footer>
+
+
+<!-- FORMULARIO DE CONTACTO -->
+
+<section class="formulario-seccion" id="contacto">
+
+    <div class="titulo-seccion">
+        <h2>✦ Hablemos ✦</h2>
+        <p>¿Te interesa mi trabajo? Déjame un mensaje ♡</p>
+    </div>
+
+    <form class="formulario" id="formulario">
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre"
+               placeholder="Escribe tu nombre"
+               required>
+
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo"
+               placeholder="ejemplo@gmail.com"
+               required>
+
+        <label for="area">Área de interés:</label>
+        <select id="area" required>
+            <option value="">Selecciona una opción</option>
+            <option>Fotografía</option>
+            <option>Diseño</option>
+            <option>Animación</option>
+            <option>Otro</option>
+        </select>
+
+        <label for="mensaje">Tu mensaje:</label>
+        <textarea id="mensaje"
+                  rows="5"
+                  placeholder="Escribe tu mensaje aquí..."
+                  required></textarea>
+
+        <button type="submit">Enviar mensaje ♡</button>
+
+        <p id="respuesta-formulario"></p>
+
+    </form>
+
+</section>
+
+<!-- MENSAJES GUARDADOS -->
+
+<section class="mensajes-guardados">
+
+    <h2>✦ Mensajes recibidos ✦</h2>
+
+    <div id="lista-mensajes"></div>
+
+</section>
+
+</script>
+ <footer>
+
+        <p>
+            ✦ Gracias por visitar mi página ✦  
+
+             Anahí Molina · Portafolio Creativo · 2026
+        </p>
+
+    </footer>
+
+</body>
+</html>
+

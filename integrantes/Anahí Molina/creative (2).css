@@ -1,0 +1,156 @@
+/* CREATIVE CODE STUDIO
+   Estilos de la interfaz */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #4c7ca1;
+    color: #eaeeef;
+    font-family: 'Playfair Display', serif;
+    line-height: 1.6;
+}
+
+/* CABECERA */
+
+.cabecera {
+    text-align: center;
+    padding: 65px 20px;
+    background: linear-gradient(
+        135deg,
+        #6ba4bf,
+        #9ebdd4,
+        #47839d
+    );
+}
+
+.etiqueta {
+    color: #8ce8f4;
+    font-size: 12px;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: clamp(32px, 5vw, 58px);
+    line-height: 1.15;
+    margin: 12px 0;
+}
+
+h1 span {
+    color: #83e9f5;
+}
+
+/* CONTENIDO */
+
+main {
+    max-width: 1150px;
+    margin: auto;
+    padding: 32px 20px;
+}
+
+.introduccion {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+h2 {
+    color: #3f7ba0;
+}
+
+h3 {
+    color: #39859c;
+}
+
+/* ZONA DE TRABAJO */
+
+.estudio {
+    display: grid;
+    grid-template-columns:
+        minmax(0, 1.5fr) minmax(0, 1fr);
+    gap: 24px;
+    align-items: start;
+}
+
+.panel,
+.herramientas {
+    background: #a9d1e3;
+    border: 1px solid #6ab4da;
+    padding: 25px;
+    border-radius: 18px;
+}
+
+canvas {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 12px;
+    background: #7fbbd7;
+}
+
+.ayuda {
+    font-size: 13px;
+    color: #1e6f83;
+}
+
+.herramientas button {
+    padding: 12px 16px;
+    margin: 5px;
+    border: none;
+    border-radius: 9px;
+    background: #99c8de;
+    color: #0d7183;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.herramientas button:hover {
+    background: #1d536a;
+}
+
+.herramientas .principal {
+    background: #9dceed;
+    width: 100%;
+    margin: 6px 0;
+}
+
+.herramientas .secundario {
+    background: #92c9d4;
+    width: 100%;
+    margin: 6px 0;
+}
+
+button:focus-visible {
+    outline: 3px solid #376387;
+    outline-offset: 3px;
+}
+
+/* PIE DE PÁGINA */
+
+footer {
+    text-align: center;
+    background: #173e5c;
+    color: #adbada;
+    padding: 22px;
+}
+
+/* PANTALLAS PEQUEÑAS */
+
+@media (max-width: 800px) {
+
+    .estudio {
+        grid-template-columns: 1fr;
+    }
+
+    .cabecera {
+        padding: 40px 20px;
+    }
+
+    .panel,
+    .herramientas {
+        padding: 18px;
+    }
+}

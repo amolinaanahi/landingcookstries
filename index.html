@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COOKSTRIES</title>
+    <link rel="stylesheet" href="Imagenes.css">
+
+    <style>
+        :root {
+            --crema: #F5EFE3;
+            --crema-claro: #FFF9EF;
+            --lacre: #711F2B;
+            --lacre-oscuro: #4A1420;
+            --beige: #E8DCCB;
+            --texto: #432B2B;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Georgia, serif;
+            background-color: var(--crema);
+            color: var(--texto);
+            min-height: 100vh;
+            padding: 30px;
+        }
+
+        /* ENCABEZADO */
+        .encabezado {
+            background: linear-gradient(
+                120deg,
+                var(--lacre-oscuro),
+                var(--lacre)
+            );
+            color: var(--crema-claro);
+            text-align: center;
+            padding: 55px 20px;
+            border-radius: 16px;
+            box-shadow: 0 8px 20px rgba(74, 20, 32, 0.15);
+        }
+
+        .encabezado .icono {
+            font-size: 40px;
+            margin-bottom: 18px;
+        }
+
+        .encabezado h1 {
+            font-family: Lobster Two, sans-serif;
+            font-size: 60px;
+            margin-bottom: 12px;
+            letter-spacing: 1px;
+        }
+
+        .encabezado p {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            color: #F0DCD5;
+        }
+
+        /* FLECHA */
+        .flecha {
+            text-align: center;
+            font-size: 45px;
+            color: var(--lacre);
+            margin: 15px 0;
+        }
+
+        /* INTEGRANTES */
+        .integrantes {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 18px;
+        }
+
+        /* TARJETAS */
+        .tarjeta {
+            background-color: var(--crema-claro);
+            border: 1px solid var(--beige);
+            border-radius: 15px;
+            padding: 35px 15px;
+            text-align: center;
+            text-decoration: none;
+            color: var(--texto);
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 12px rgba(74, 20, 32, 0.06);
+        }
+
+        .tarjeta:hover {
+            background-color: var(--lacre);
+            color: var(--crema-claro);
+            transform: translateY(-7px);
+            box-shadow: 0 10px 20px rgba(74, 20, 32, 0.2);
+        }
+
+        .tarjeta .icono {
+            font-size: 38px;
+            margin-bottom: 18px;
+        }
+
+        .tarjeta h2 {
+            font-family: Arial, sans-serif;
+            font-size: 19px;
+            margin-bottom: 12px;
+        }
+
+        .tarjeta p {
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            color: #947B70;
+        }
+
+        .tarjeta:hover p {
+            color: #F0DCD5;
+        }
+
+        /* PIE DE PÁGINA */
+        .pie {
+            text-align: center;
+            margin-top: 25px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            color: #846D62;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 800px) {
+            .integrantes {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 500px) {
+            body {
+                padding: 15px;
+            }
+
+            .encabezado {
+                padding: 40px 15px;
+            }
+
+            .encabezado h1 {
+                font-size: 23px;
+            }
+
+            .integrantes {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="encabezado">
+        <div class="icono">✦</div>
+
+        <h1>COOKSTRIES</h1>
+
+        <p>
+            Hacemos uso de nuestra creatividad y habilidades para compartir ideas y experiencias, especialmente en repostería y en diseño de páginas web.
+        </p>
+    </header>
+
+
+    <main class="integrantes">
+
+        <a href="integrante1.html" class="tarjeta">
+            <div class="icono">
+                <img src="imagenes/Sebastian.jpeg" alt="Fotografía">
+            </div>
+            
+            <h2>Sebastián Solano</h2>
+            <p>Animación 3d y 2d</p>
+        </a>
+
+
+        <a href="integrante2.html" class="tarjeta">
+            <div class="icono">
+                <img src="imagenes/Anahí.jpeg" alt="Fotografía">
+            </div>
+            <h2>Anahí Molina</h2>
+            <p>Fotografía, diseño de fondos</p>
+        </a>
+
+        <a href="integrante3.html" class="tarjeta">
+
+    <div class="icono">
+        
+        <img src="imagenes/Ana.jpeg" alt="Fotografía">
+    </div>
+
+    <h2>Ana Jimpikit</h2>
+    <p>Diseños 3D</p>
+
+</a>
+        </a>
+
+        <a href="integrante4.html" class="tarjeta">
+            <div class="icono">
+                <img src="imagenes/Meli.jpeg" alt="Fotografía">
+            </div>
+            </div>
+            <h2>Melissa Guzmán</h2>
+            <p>Video, edición audiovisual, fotografía</p>
+        </a>
+
+    </main>
+
+
+
+<!-- FORMULARIO DE CONTACTO -->
+
+<style>
+
+/* FORMULARIO DE CONTACTO */
+
+.contacto {
+    background-color: #FFF9EF;
+    max-width: 750px;
+    margin: 55px auto 35px;
+    padding: 45px;
+    border-radius: 18px;
+    border: 1px solid #E8DCCB;
+    box-shadow: 0 8px 22px rgba(74, 20, 32, 0.08);
+}
+
+/* ENCABEZADO */
+
+.contacto-encabezado {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contacto-encabezado span {
+    font-size: 35px;
+    color: #711F2B;
+}
+
+.contacto-encabezado h2 {
+    font-family: Georgia, serif;
+    font-size: 30px;
+    color: #711F2B;
+    margin: 12px 0;
+}
+
+.contacto-encabezado p {
+    font-family: Arial, sans-serif;
+    color: #846D62;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* FORMULARIO */
+
+#formularioContacto {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* CAMPOS */
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.campo label {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #4A1420;
+}
+
+.campo input,
+.campo textarea {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #E8DCCB;
+    border-radius: 9px;
+    background-color: #FFFCF7;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #432B2B;
+    outline: none;
+    transition: 0.3s;
+}
+
+.campo input:focus,
+.campo textarea:focus {
+    border-color: #711F2B;
+    box-shadow: 0 0 6px rgba(113, 31, 43, 0.15);
+}
+
+.campo textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* BOTÓN */
+
+.boton-enviar {
+    background-color: #711F2B;
+    color: #FFF9EF;
+    border: none;
+    border-radius: 9px;
+    padding: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.boton-enviar:hover {
+    background-color: #4A1420;
+    transform: translateY(-3px);
+}
+
+/* CONFIRMACIÓN */
+
+#confirmacion {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: #711F2B;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/* MENSAJES GUARDADOS */
+
+.mensajes-guardados {
+    margin-top: 40px;
+    border-top: 1px solid #E8DCCB;
+    padding-top: 25px;
+}
+
+.mensajes-guardados h3 {
+    color: #711F2B;
+    font-family: Georgia, serif;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.mensaje-tarjeta {
+    background-color: #F5EFE3;
+    border: 1px solid #E8DCCB;
+    border-radius: 10px;
+    padding: 18px;
+    margin-bottom: 15px;
+    font-family: Arial, sans-serif;
+    color: #432B2B;
+    overflow-wrap: anywhere;
+}
+
+.mensaje-tarjeta h4 {
+    color: #711F2B;
+    margin-bottom: 10px;
+}
+
+.mensaje-tarjeta p {
+    margin: 7px 0;
+    font-size: 14px;
+}
+
+.mensaje-tarjeta button {
+    background-color: #711F2B;
+    color: #FFF9EF;
+    border: none;
+    padding: 8px 13px;
+    border-radius: 6px;
+    margin-top: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.mensaje-tarjeta button:hover {
+    background-color: #4A1420;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 500px) {
+
+    .contacto {
+        padding: 25px 18px;
+        margin: 35px auto;
+    }
+
+    .contacto-encabezado h2 {
+        font-size: 25px;
+    }
+
+}
+
+</style>
+
+
+<section class="contacto" id="contacto">
+
+    <div class="contacto-encabezado">
+        <span>✦</span>
+        <h2>Contáctanos</h2>
+        <p>Nos encantaría conocer tus ideas y propuestas.</p>
+    </div>
+
+    <form id="formularioContacto">
+
+        <div class="campo">
+            <label for="nombre">Nombre completo</label>
+            <input type="text" id="nombre" placeholder="Tu nombre" required>
+        </div>
+
+        <div class="campo">
+            <label for="correo">Correo electrónico</label>
+            <input type="email" id="correo" placeholder="Tu correo electrónico" required>
+        </div>
+
+        <div class="campo">
+            <label for="asunto">Asunto</label>
+            <input type="text" id="asunto" placeholder="Motivo de contacto" required>
+        </div>
+
+        <div class="campo">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" rows="5" placeholder="Escribe tu mensaje..." required></textarea>
+        </div>
+
+        <button type="submit" class="boton-enviar">
+            Enviar mensaje ✦
+        </button>
+
+        <p id="confirmacion"></p>
+
+    </form>
+
+    <!-- MENSAJES GUARDADOS -->
+
+    <div class="mensajes-guardados">
+        <h3>Mensajes recibidos</h3>
+        <div id="listaMensajes"></div>
+    </div>
+
+</section>
+
+<script src="Formulario.js"></script>
+
+
+    <footer class="pie">
+        <p>Av. Loja - @cookstries - 0991765106.</p>
+        
+    </footer>
+
+</body>
+</html>

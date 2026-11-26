@@ -1,0 +1,183 @@
+
+/* =================================
+   FORMULARIO DE CONTACTO - COOKSTRIES
+================================= */
+
+.contacto {
+    background-color: #FFF9EF;
+    max-width: 750px;
+    margin: 55px auto 35px;
+    padding: 45px;
+    border-radius: 18px;
+    border: 1px solid #E8DCCB;
+    box-shadow: 0 8px 22px rgba(74, 20, 32, 0.08);
+}
+
+/* ENCABEZADO */
+
+.contacto-encabezado {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contacto-encabezado span {
+    font-size: 35px;
+    color: #711F2B;
+}
+
+.contacto-encabezado h2 {
+    font-family: Georgia, serif;
+    font-size: 30px;
+    color: #711F2B;
+    margin: 12px 0;
+}
+
+.contacto-encabezado p {
+    font-family: Arial, sans-serif;
+    color: #846D62;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* FORMULARIO */
+
+#formularioContacto {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* CAMPOS */
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.campo label {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #4A1420;
+}
+
+.campo input,
+.campo textarea {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #E8DCCB;
+    border-radius: 9px;
+    background-color: #FFFCF7;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #432B2B;
+    outline: none;
+    transition: 0.3s;
+}
+
+.campo input:focus,
+.campo textarea:focus {
+    border-color: #711F2B;
+    box-shadow: 0 0 6px rgba(113, 31, 43, 0.15);
+}
+
+.campo textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* BOTÓN */
+
+.boton-enviar {
+    background-color: #711F2B;
+    color: #FFF9EF;
+    border: none;
+    border-radius: 9px;
+    padding: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.boton-enviar:hover {
+    background-color: #4A1420;
+    transform: translateY(-3px);
+}
+
+/* MENSAJE DE CONFIRMACIÓN */
+
+#confirmacion {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: #711F2B;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/* MENSAJES GUARDADOS */
+
+.mensajes-guardados {
+    margin-top: 40px;
+    border-top: 1px solid #E8DCCB;
+    padding-top: 25px;
+}
+
+.mensajes-guardados h3 {
+    color: #711F2B;
+    font-family: Georgia, serif;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.mensaje-tarjeta {
+    background-color: #F5EFE3;
+    border: 1px solid #E8DCCB;
+    border-radius: 10px;
+    padding: 18px;
+    margin-bottom: 15px;
+    font-family: Arial, sans-serif;
+    color: #432B2B;
+    overflow-wrap: anywhere;
+}
+
+.mensaje-tarjeta h4 {
+    color: #711F2B;
+    margin-bottom: 10px;
+}
+
+.mensaje-tarjeta p {
+    margin: 7px 0;
+    font-size: 14px;
+}
+
+.mensaje-tarjeta button {
+    background-color: #711F2B;
+    color: #FFF9EF;
+    border: none;
+    padding: 8px 13px;
+    border-radius: 6px;
+    margin-top: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.mensaje-tarjeta button:hover {
+    background-color: #4A1420;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 500px) {
+
+    .contacto {
+        padding: 25px 18px;
+        margin: 35px auto;
+    }
+
+    .contacto-encabezado h2 {
+        font-size: 25px;
+    }
+
+}
